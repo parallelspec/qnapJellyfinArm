@@ -30,3 +30,4 @@ FULL DISCLAIMER - I AM VERY MUCH A NOOB IN THIS TYPE OF SOFTWARE!!! IF THERE'S A
 ### To-do list
 * Learn how setup a VPN for remote connections outside of local network 
 * Probably learn how to format better in markdown
+* Need to learn more about port forwarding, in particular - keeping a constant port so it doesn't change everytime we restart the server
