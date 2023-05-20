@@ -26,3 +26,7 @@ FULL DISCLAIMER - I AM VERY MUCH A NOOB IN THIS TYPE OF SOFTWARE!!! IF THERE'S A
 15. Click **Apply** when done and continue with the installation. When it's done, it'll run automatically. 
 16. Click on the Jellyfin container. Under **Details**, click on the **Port forwarding** number. You have will the link needed to access the web-gui of Jellyfin. 
 17. Paste that link in the new tab. Congrats!!! You're done! The setup is pretty simple from here, just make sure you put your media files in */media* in your NAS. 
+
+### To-do list
+* Learn how setup a VPN for remote connections outside of local network 
+* Probably learn how to format better in markdown
