@@ -1,7 +1,11 @@
 # qnapJellyfin
+
+Not sure if anyone reads this but I've recently changed my setup process for Jellyfin such that the port remains consistent (8096 by default), making it a lot easier for static address things (Tailscale, Duck DNS etc.) I'll revisit this in some time but the steps are pretty much the same. Just either edit your docker compose yaml with the correct ports and PGID and GIDs. 
+
+
 easy to access tutorial on how to install [Jellyfin](https://jellyfin.org) on most 5.0 [QNAP](https://www.qnap.com) systems (made for myself so I don't need to traverse half of the internet again but could be useful for others). We will use the [linuxserver/jellyfin](https://docs.linuxserver.io/images/docker-jellyfin) release, although I'm sure the offical Jellyfin/Jellyfin works too. This is targeted towards ARM CPU QNAP devices, since the Intel models can simply use [Jellyfin for QNAP](https://github.com/pdulvp/jellyfin-qnap). We are using [Docker](https://hub.docker.com) via Container Station in this tutorial.
 
-FULL DISCLAIMER - I AM VERY MUCH A NOOB IN THIS TYPE OF SOFTWARE!!! IF THERE'S ANYTHING WRONG WITH THE STEPS PROVIDED PLEASE LET ME KNOW! IF I MESS UP YOUR MEDIA FOLDER/NAS/WHATEVER IT'S NOT MY FAULT!!! SORRY!
+FULL DISCLAIMER - please backup your media and metadata etc.
 
 
 ## Pre-requisites 
