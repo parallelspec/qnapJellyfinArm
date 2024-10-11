@@ -1,9 +1,13 @@
 # qnapJellyfin
 
-Not sure if anyone reads this but I've recently changed my setup process for Jellyfin such that the port remains consistent (8096 by default), making it a lot easier for static address things (Tailscale, Duck DNS etc.) I'll revisit this in some time but the steps are pretty much the same. Just either edit your docker compose yaml with the correct ports and PGID and GIDs. 
+Not sure if anyone reads this but I've recently changed my setup process for Jellyfin such that the port remains consistent (8096 by default), making it a lot easier for static address things (Tailscale, Duck DNS etc.) I'll revisit this in some time but the steps are pretty much the same. Just either edit your docker compose yaml with the correct ports and PGID and GIDs (8096) and it'll stay that port even after restarts/shutdowns.
 
 
-easy to access tutorial on how to install [Jellyfin](https://jellyfin.org) on most 5.0 [QNAP](https://www.qnap.com) systems (made for myself so I don't need to traverse half of the internet again but could be useful for others). We will use the [linuxserver/jellyfin](https://docs.linuxserver.io/images/docker-jellyfin) release, although I'm sure the offical Jellyfin/Jellyfin works too. This is targeted towards ARM CPU QNAP devices, since the Intel models can simply use [Jellyfin for QNAP](https://github.com/pdulvp/jellyfin-qnap). We are using [Docker](https://hub.docker.com) via Container Station in this tutorial.
+easy to access tutorial on how to install [Jellyfin](https://jellyfin.org) on most 5.0 [QNAP](https://www.qnap.com) systems (made for myself so I don't need to traverse half of the internet again but could be useful for others). 
+
+We will use the [linuxserver/jellyfin 10.8.13](https://hub.docker.com/layers/linuxserver/jellyfin/10.8.13/images/sha256-6a0f9c6f092557e34d9fad158e72e0980574a8e2caddb033bf3afcc96f67dc07) release. This is the last Jellyfin release which supports ARM QNAP devices, as QNAP has not updated the Linux kernel on these devices in a minute (thanks IonCharge for the headsup).
+
+This is targeted towards ARM CPU QNAP devices, since the Intel models can simply use [Jellyfin for QNAP](https://github.com/pdulvp/jellyfin-qnap). We are using [Docker](https://hub.docker.com) via Container Station in this tutorial.
 
 FULL DISCLAIMER - please backup your media and metadata etc.
 
@@ -30,6 +34,8 @@ FULL DISCLAIMER - please backup your media and metadata etc.
 15. Click **Apply** when done and continue with the installation. When it's done, it'll run automatically. 
 16. Click on the Jellyfin container. Under **Details**, click on the **Port forwarding** number. You have will the link needed to access the web-gui of Jellyfin. 
 17. Paste that link in the new tab. Congrats!!! You're done! The setup is pretty simple from here, just make sure you put your media files in */media* in your NAS. 
+
+Make sure you disable SSH connections once your complete.
 
 ### To-do list
 * Learn how setup a VPN for remote connections outside of local network 
