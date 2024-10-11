@@ -1,6 +1,6 @@
 # qnapJellyfin
 
-Not sure if anyone reads this but I've recently changed my setup process for Jellyfin such that the port remains consistent (8096 by default), making it a lot easier for static address things (Tailscale, Duck DNS etc.) I'll revisit this in some time but the steps are pretty much the same. Just either edit your docker compose yaml with the correct ports and PGID and GIDs (8096) and it'll stay that port even after restarts/shutdowns.
+Not sure if anyone reads this but I've recently changed my setup process for Jellyfin such that the port remains consistent (8096 by default), making it a lot easier for static address things (Tailscale, Duck DNS etc.) I'll revisit this in some time but the steps are pretty much the same. Just either edit your docker compose yaml with the correct ports and PGID and GIDs and it'll stay that port even after restarts/shutdowns.
 
 
 easy to access tutorial on how to install [Jellyfin](https://jellyfin.org) on most 5.0 [QNAP](https://www.qnap.com) systems (made for myself so I don't need to traverse half of the internet again but could be useful for others). 
