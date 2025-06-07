@@ -1,5 +1,7 @@
 # qnapJellyfin
 
+I no longer use Jellyfin/host local media in general, so I won't be able to provide support and will check for any comments/issues on a very periodic basis. Feel free to use this in your own guide/website/post. Thanks y'all
+
 Not sure if anyone reads this but I've recently changed my setup process for Jellyfin such that the port remains consistent (8096 by default), making it a lot easier for static address things (Tailscale, Duck DNS etc.) I'll revisit this in some time but the steps are pretty much the same. Just either edit your docker compose yaml with the correct ports and PGID and GIDs and it'll stay that port even after restarts/shutdowns.
 
 
